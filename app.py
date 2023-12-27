@@ -36,7 +36,7 @@ model = load('model_1.joblib')
 vocab = pickle.load(open('kbest_feature.pickle', 'rb'))
 
 tf_idf_vec = TfidfVectorizer(vocabulary=set(vocab))
-user_input = st.text_input('Masukkan sebuah keyword:')  
+user_input = st.text_input('Masukkan Title atau Abstract:')  
 tfidf = tf_idf_vec.fit_transform([user_input])
 prediksi = model.predict(tfidf)
 
