@@ -43,7 +43,7 @@ prediksi = model.predict(tfidf)
 if st.button("prediksi"):
 
     if prediksi == 0:
-        prediction = 'Exlude'
+        prediction = 'Exclude'
     elif prediksi == 1:
         prediction = 'Include'
 
