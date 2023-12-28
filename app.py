@@ -36,8 +36,9 @@ model = load('model_1.joblib')
 vocab = pickle.load(open('kbest_feature.pickle', 'rb'))
 
 tf_idf_vec = TfidfVectorizer(vocabulary=set(vocab))
-user_input = st.text_input('Masukkan Title atau Abstract:')  
-tfidf = tf_idf_vec.fit_transform([user_input])
+user_input = st.text_input('Masukkan Title :')
+user_input1 = st.text_input('Masukkan Abstract :')  
+tfidf = tf_idf_vec.fit_transform([user_input], [user_input1])
 prediksi = model.predict(tfidf)
 
 if st.button("prediksi"):
@@ -47,7 +48,7 @@ if st.button("prediksi"):
     elif prediksi == 1:
         prediction = 'Include'
 
-    st.write("Hasil prediksi: ", user_input, ' adalah', prediction)
+    st.write("Hasil prediksi: adalah", prediction)
     
 st.header('Our Teams')
 st.write("""Dalam proses pembuatan website aplikasi klasifikasi keyword 
