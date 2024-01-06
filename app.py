@@ -29,7 +29,4 @@ with col1:
 with col2:
    st.subheader("Screening Artikel")
    st.write("""Aplikasi ini dapat membantu para dokter dan 
-            peneliti untuk membantu screening artikel dengan efisien""")
-    
-
-
+            peneliti untuk membantu screening artikel dengan efisien""")   

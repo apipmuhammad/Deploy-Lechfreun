@@ -40,13 +40,6 @@ elif selected_option == "Abstract":
       elif prediksi == 1:
          prediction = 'Include'
 
-      st.write("Hasil prediksi: adalah", prediction)
-
-#if st.button("prediksi"):
-   
-  # if prediksi == 0:
-       # prediction = 'Exclude'
-  #elif prediksi == 1:
        # prediction = 'Include'
 
   # st.write("Hasil prediksi: adalah", prediction)
