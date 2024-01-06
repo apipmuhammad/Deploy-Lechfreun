@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from joblib import load
 from streamlit_option_menu import option_menu
 
-selected = st.option_menu(menu_title = None, options = ["Home","Model", "Our Team"],  orientation = "horizontal")
+selected = option_menu(menu_title = None, options = ["Home","Model", "Our Team"],  orientation = "horizontal")
    
 if selected == "Home":
    st.image('image/a.jpg')
