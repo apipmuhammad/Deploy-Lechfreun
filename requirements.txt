@@ -4,4 +4,4 @@ joblib
 scikit-learn
 tensorflow
 numpy
-streamlit_option_menu
+streamlit_option_menu 
