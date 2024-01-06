@@ -40,6 +40,4 @@ elif selected_option == "Abstract":
       elif prediksi == 1:
          prediction = 'Include'
 
-       # prediction = 'Include'
-
-  # st.write("Hasil prediksi: adalah", prediction)
+      st.write("Hasil prediksi: adalah", prediction)
