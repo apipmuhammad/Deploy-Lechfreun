@@ -1,8 +1,11 @@
 import streamlit as st
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
+from keras.utils import pad_sequences
+from keras.models import load_model
 from joblib import load
 from streamlit_option_menu import option_menu
+
 
 selected = option_menu(menu_title = None, options = ["Home","Model", "Our Team"],  orientation = "horizontal")
    
