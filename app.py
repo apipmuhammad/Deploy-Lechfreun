@@ -1,10 +1,11 @@
 import streamlit as st
-import pickle
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from keras.utils import pad_sequences
 from keras.models import load_model
 from joblib import load
 from streamlit_option_menu import option_menu
+import pickle
 
 
 
