@@ -7,9 +7,9 @@ from joblib import load
 from streamlit_option_menu import option_menu
 
 
-selected = option_menu(menu_title = None, options = ["Home","Model", "Our Team"],  orientation = "horizontal")
+selected1 = option_menu(menu_title = None, options = ["Home","Model", "Our Team"],  orientation = "horizontal")
    
-if selected == "Home":
+if selected1 == "Home":
    st.image('image/a.jpg')
    st.title('Automatic Systematic Literature Review')
    st.write("""Selamat datang di Automatic Systematic Literature Review. Aplikasi ini menggunakan
@@ -35,7 +35,7 @@ if selected == "Home":
       st.write("""Aplikasi ini dapat membantu para dokter dan 
             peneliti untuk membantu screening artikel dengan efisien""")   
    
-elif selected == "Model":
+elif selected1 == "Model":
       
    st.header('Aplikasi Klasifikasi Keyword')  
    model = load('model_1.joblib')
@@ -74,7 +74,7 @@ elif selected == "Model":
          st.write("Hasil prediksi: adalah", prediction)
 
 
-elif selected == "Our Team":
+elif selected1 == "Our Team":
    st.header('Our Teams')
    st.write("""Dalam proses pembuatan website aplikasi klasifikasi keyword 
          disini kami terdiri dari 3 orang""")
