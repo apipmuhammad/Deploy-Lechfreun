@@ -4,4 +4,5 @@ joblib
 scikit-learn
 tensorflow
 numpy
+pickle
 streamlit-option-menu == 0.3.2 
